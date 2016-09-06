@@ -72,26 +72,23 @@
 
     </div>
 
-      <form action=""> 
-            <fieldset>
-               
-               <label>First Name:<input type="text" name="first-name" value=""></label>
-               <label>Password:<input type="password" name="password" value=""></label>
-               <label>Email:<input type="email" name="email" value=""></label> 
-               <label>Website:<input type="url" name="website" value=""></label>
-               <input type="submit" name="submit" value="submit">
-               
-            </fieldset>
+      <form action="">
 
             <fieldset>
+               
+               <label>First Name:<input type="text" name="first-name" placeholder="Joe Bloggs" required="required"></label>
+               <label>Password:<input type="password" name="password" placeholder="password"></label>
+               <label>Email:<input type="email" name="email" placeholder="joebloggs@email.com" required="required"></label>
+               <label>Telephone No.:<input type="tel" name="phone-number" placeholder="123-45678"></label>
+               <label>Website:<input type="url" name="website" placeholder="www.joebloggs.com"></label>
+               <label>Passport No.:<input type="text" name="passport" placeholder="AB-1234567" pattern="[a-z,0-9] {9}"></label>
+               <label>Eircode:<input type= "text" name= "post-code" pattern= "[0-9,a-z] {7}" title= "eircode." placeholder="D00-AB12" /></label>
+               <label>Credit Card No.:<input type="text" name="credit-card" pattern="[0-9] {16}" placeholder="0000-1111-2222-3333"></label>
+               <label>Age:<input type="number" name="age" max="99" min="0" value="0"></label>
+               <input type="submit" name="submit" placeholder="submit">
 
-                <legend>Personal Details</legend>
-
-                  <label>Email:<input type="email" name="email"></label>
-                  <label>Telephone:<input type="tel" name="phone-number"></label>
-                  <label>Website:<input type="url" name="website"></label>
-                  
             </fieldset>
+
       </form>
    </body>
 
