@@ -73,13 +73,25 @@
     </div>
 
       <form action=""> 
-         <ul>
-               <li><input type="text" name="First Name" value="First Name"></li>
-               <li><input type="password" name="Password" value="Password"></li>
-               <li><input type="email" name="Email" value="Email"></li>
-               <li><input type="url" name="Website" value="Website"></li>
-               <li><input type="submit" name="submit" value="Submit"></li>
-         </ul>
+            <fieldset>
+               
+               <label>First Name:<input type="text" name="first-name" value=""></label>
+               <label>Password:<input type="password" name="password" value=""></label>
+               <label>Email:<input type="email" name="email" value=""></label> 
+               <label>Website:<input type="url" name="website" value=""></label>
+               <input type="submit" name="submit" value="submit">
+               
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Personal Details</legend>
+
+                  <label>Email:<input type="email" name="email"></label>
+                  <label>Telephone:<input type="tel" name="phone-number"></label>
+                  <label>Website:<input type="url" name="website"></label>
+                  
+            </fieldset>
       </form>
    </body>
 
