@@ -76,15 +76,51 @@
 
             <fieldset>
                
-               <label>First Name:<input type="text" name="first-name" placeholder="Joe Bloggs" required="required"></label>
+               <label>Full Name:<input type="text" name="first-name" placeholder="Joe Bloggs" required="required"></label>
                <label>Password:<input type="password" name="password" placeholder="password"></label>
-               <label>Email:<input type="email" name="email" placeholder="joebloggs@email.com" required="required"></label>
+               <label>Email:<input type="email" name="email" placeholder="joebloggs@email.com" required="required" autofocus="autofocus"></label>
                <label>Telephone No.:<input type="tel" name="phone-number" placeholder="123-45678"></label>
                <label>Website:<input type="url" name="website" placeholder="www.joebloggs.com"></label>
                <label>Passport No.:<input type="text" name="passport" placeholder="AB-1234567" pattern="[a-z,0-9] {9}"></label>
                <label>Eircode:<input type= "text" name= "post-code" pattern= "[0-9,a-z] {7}" title= "eircode." placeholder="D00-AB12" /></label>
                <label>Credit Card No.:<input type="text" name="credit-card" pattern="[0-9] {16}" placeholder="0000-1111-2222-3333"></label>
                <label>Age:<input type="number" name="age" max="99" min="0" value="0"></label>
+               <label>Date:<input type="date" name="date"></label>
+
+               <label>Would you like:
+                  <input type="checkbox" name="course" value="Starter">Starter
+                  <input type="checkbox" name="course" value="Main">Main
+                  <input type="checkbox" name="course" value="Dessert">Dessert
+               </label>
+
+               <label>Gender:
+                  <input type="radio" name="gender" value="Male">Male
+                  <input type="radio" name="gender" value="Female">Female
+                  <input type="radio" name="gender" value="Other">Other
+               </label>
+
+               <label>Choose Spice Preference:
+                  <select>
+                     <option value="spice-level">No spice</option>
+                     <option value="spice-level">Mild</option>
+                     <option value="spice-level">Spicy</option>
+                     <option value="spice-level">Very Spicy!!!</option>
+                     <option value="spice-level">Weapons Grade</option>
+                  </select>
+               </label>
+
+               <label>Select Cuisine Preference:
+
+                     <datalist id="cuisine-preference">
+                        <select>
+                           <option value="Mexican">Mexican</option>
+                           <option value="Thai">Thai</option>
+                           <option value="Chinese">Chinese</option>
+                           <option value="Indian">Indian</option>
+                        </select>
+                     </datalist>
+               </label>
+
                <input type="submit" name="submit" placeholder="submit">
 
             </fieldset>
